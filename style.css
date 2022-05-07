@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+body{
+    font-family: Poppins;
+    --color--primary: rgb(207, 45, 113);
+    --color--error: #cc3333;
+    --color--success: #4bb544;
+    --border-radius: 4px;
+    font-size: 18px;
+
+    margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgb(228, 79, 141),rgb(245, 175, 204));
+}
+
+.container{
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+}
+
+.container,
+.form__input,
+.form__button{
+    font-weight: 500; 
+}
+
+.form--hidden{
+    display: none;
+}
+form > *:first-child{
+    margin-top: 0;
+}
+
+form > *:last-child{
+    margin-bottom: 0;
+}
+
+.form__title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__input{
+    margin-bottom: 1rem;
+}
+
+.form__message--success{
+    color: var(--color--success);
+}
+
+.form__input--error{
+    border-color: var(--color--error);
+}
+
+.form__input{
+    font-family: Poppins;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 2.5px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus{
+    border-color: var(--color--primary);
+    background-color: #ffffff;
+}
+
+.form__input-error-message{
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: var(--color--error);
+    margin-bottom: 0.8rem;
+    border-color: var(--color--error);
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 2.5px solid #dddddd;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color--primary);
+}
+
+.form__button:hover{
+    background-color: rgb(250, 117, 170);
+}
+
+.form__button:active{
+    transition: scale(0.98);
+}
+
+.form__text{
+    text-align: center;
+}
+
+.form__link{
+    color: var(--color--primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover{
+    text-decoration: underline;
+}
+
